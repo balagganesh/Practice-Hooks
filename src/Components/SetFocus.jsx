@@ -108,7 +108,7 @@ const SetFocus = () => {
           </label>
           <button
             onClick={handlecheckfieldstate}
-            type="button" // Change type to "button" to prevent form submission
+            type="button"
             className="bg-blue-900 text-white p-2 rounded w-full sm:w-auto sm:px-4 sm:py-2"
           >
             Get Field State

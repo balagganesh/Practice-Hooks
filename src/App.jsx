@@ -12,11 +12,16 @@ import Trigger from './Components/Trigger'
 import Control from './Components/Control'
 import { Controller } from 'react-hook-form'
 import YUP from './Components/YUP'
+import store from './Store/Store'
+import { Provider } from 'react-redux'
+import Registration from './features/Registration'
 
 const App = () => {
   return (
     <div>
-      <Control/>
+      <Provider store={store}>
+      <Registration/>
+      </Provider>
     </div>
   )
 }
